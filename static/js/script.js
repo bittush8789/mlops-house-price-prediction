@@ -78,4 +78,34 @@ document.addEventListener('DOMContentLoaded', () => {
             input.parentElement.parentElement.style.transform = 'translateX(0)';
         });
     });
+
+    // Initialize sub-locations
+    window.updateSubLocations();
 });
+
+const subLocations = {
+    'Delhi': ['Saket', 'Dwarka', 'Rohini', 'Vasant Kunj', 'Lajpat Nagar', 'Karol Bagh'],
+    'Gurgaon': ['DLF Phase 1', 'Golf Course Road', 'Sohna Road', 'Sector 56', 'New Gurgaon'],
+    'Noida': ['Sector 50', 'Sector 76', 'Sector 137', 'Sector 150'],
+    'Ghaziabad': ['Indirapuram', 'Vaishali', 'Raj Nagar Extension'],
+    'Faridabad': ['Sector 15', 'Green Valley', 'Neharpar']
+};
+
+window.updateSubLocations = function() {
+    const locationSelect = document.getElementById('location');
+    const subLocationSelect = document.getElementById('sub_location');
+    const selectedCity = locationSelect.value;
+    
+    // Clear current options
+    subLocationSelect.innerHTML = '';
+    
+    // Add new options
+    if (subLocations[selectedCity]) {
+        subLocations[selectedCity].forEach(sub => {
+            const option = document.createElement('option');
+            option.value = sub;
+            option.textContent = sub;
+            subLocationSelect.appendChild(option);
+        });
+    }
+};
