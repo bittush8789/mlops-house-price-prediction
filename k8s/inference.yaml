@@ -7,4 +7,4 @@ spec:
   predictor:
     serviceAccountName: sa-s3-access
     sklearn:
-      storageUri: s3://estateai-models/models/house_model.pkl
+      storageUri: s3://estateai-valuation-bucket-cicd/models/house_model.pkl
