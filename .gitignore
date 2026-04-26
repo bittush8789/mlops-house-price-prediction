@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Model & Data (Optional: if you want to keep them local, but for this project we push them)
+# model/*.pkl
+# data/*.csv
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
