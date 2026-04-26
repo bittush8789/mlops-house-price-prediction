@@ -131,6 +131,61 @@ graph LR
 | **MAPE** | 3.1% |
 | **CV Stability** | 98.2% |
 
+## 📂 Project Structure
+
+```text
+├── .github/workflows/    # MLOps CI/CD Pipelines
+├── argocd/               # ArgoCD GitOps Manifests
+├── data/                 # Raw and Processed datasets (DVC tracked)
+├── documentation/        # Technical reports and Architecture audits
+├── k8s/                  # Kubernetes & KServe Manifests
+├── model/                # Serialized Stacking Ensemble (.pkl)
+├── static/               # CSS and Frontend Assets
+├── templates/            # HTML Templates (Glassmorphism UI)
+├── tests/                # Pytest Automated Suite
+├── main.py               # FastAPI Production Entrypoint
+├── train_optimized.py    # ML Training Pipeline
+└── data_generation.py    # Production Data Simulator
+```
+
+## 🔌 API Documentation (Production Endpoints)
+
+EstateAI provides a high-performance REST API for real-time valuations.
+
+### `POST /predict`
+The core valuation engine.
+- **Input**: House features (Area, BHK, Year Built, Micro-location, etc.)
+- **Output**: 
+  - `predicted_price`: AI-driven market value.
+  - `market_tier`: Valuation classification (Affordable, Premium, Ultra-Luxury).
+  - `ai_factors`: Top influential features for the specific valuation.
+
+### `GET /`
+Serves the dynamic Glassmorphism Web Interface.
+
 ---
-**Author**: Principal ML Engineer & Full Stack Architect
+
+## 🎨 UI/UX: Glassmorphism Design
+The frontend is built with modern CSS techniques to provide a premium, data-driven experience:
+- **Vibrant Gradients**: Deep purples and blues for a futuristic tech aesthetic.
+- **Frosted Glass (Glassmorphism)**: High-transparency cards with backdrop filters.
+- **Micro-Animations**: Smooth transitions and hover effects for interactive elements.
+- **Sub-location Granularity**: Intelligent filtering of micro-locations based on the selected city.
+
+---
+
+## 🤝 Contributing
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📜 License
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+---
+**Author**: Principal ML Engineer & Full Stack Architect  
 **Status**: Production Ready | MLOps Integrated | Version 2.2.0
