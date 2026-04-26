@@ -187,5 +187,5 @@ The frontend is built with modern CSS techniques to provide a premium, data-driv
 Distributed under the **MIT License**. See `LICENSE` for more information.
 
 ---
-**Author**: Principal ML Engineer & Full Stack Architect  
+**Author**: [Bittu Sharma](https://github.com/bittush8789) — AI & MLOps Engineer  
 **Status**: Production Ready | MLOps Integrated | Version 2.2.0
