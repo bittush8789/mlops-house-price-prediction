@@ -146,6 +146,28 @@ FastAPI automatically generates interactive documentation for developers:
 - **Swagger UI**: [http://127.0.0.1:5000/docs](http://127.0.0.1:5000/docs)
 - **ReDoc**: [http://127.0.0.1:5000/redoc](http://127.0.0.1:5000/redoc)
 
+## 📦 Data Versioning (DVC)
+
+We use **DVC** to track large datasets without bloating the Git repository.
+
+### 1. Data Structure
+- **Raw Data**: `data/raw.csv` (Tracked by DVC)
+- **Processed Data**: `data/processed.csv` (Tracked by DVC)
+
+### 2. DVC Workflow
+To pull the data:
+```bash
+dvc pull
+```
+
+To version new data:
+```bash
+dvc add data/raw.csv
+git add data/raw.csv.dvc .gitignore
+git commit -m "Update raw dataset version"
+dvc push
+```
+
 ## 📊 Model Performance
 
 | Metric | Score (Test Set) |

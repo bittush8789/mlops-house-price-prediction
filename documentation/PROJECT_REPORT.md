@@ -43,6 +43,7 @@ The development of EstateAI utilized a suite of industry-standard tools for maxi
 - **Pandas & NumPy**: Foundation for data manipulation, cleansing, and mathematical operations.
 - **Matplotlib & Seaborn**: Used in the EDA phase for generating deep-dive market insights and visualizations.
 - **Joblib**: For efficient model serialization and persistence.
+- **DVC (Data Version Control)**: Integrated for tracking raw and processed datasets independently of Git.
 - **Git**: Employed for comprehensive version control and project management.
 - **Mermaid.js**: Used for creating professional architectural diagrams within the documentation.
 
