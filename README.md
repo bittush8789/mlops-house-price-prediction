@@ -146,6 +146,27 @@ FastAPI automatically generates interactive documentation for developers:
 - **Swagger UI**: [http://127.0.0.1:5000/docs](http://127.0.0.1:5000/docs)
 - **ReDoc**: [http://127.0.0.1:5000/redoc](http://127.0.0.1:5000/redoc)
 
+## 🐳 Dockerization (MLOps Deployment)
+
+EstateAI is fully containerized for consistent deployment across environments.
+
+### 1. Using Docker Directly
+```bash
+# Build the image
+docker build -t estate-ai .
+
+# Run the container
+docker run -p 5000:5000 estate-ai
+```
+
+### 2. Using Docker Compose (Recommended)
+```bash
+# Build and start the service
+docker-compose up --build
+```
+
+The application will be accessible at `http://localhost:5000`.
+
 ## 📦 Data Versioning (DVC)
 
 We use **DVC** to track large datasets without bloating the Git repository.

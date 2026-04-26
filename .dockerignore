@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+.git/
+.dvc/
+.github/
+notebooks/
+documentation/
+.dvcignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+*.pkl
+*.csv
+# Note: Usually you want to include the model/data in the image for production, 
+# but for large files, volume mounting is preferred. 
+# For now, we'll exclude them to keep image size small if needed.
