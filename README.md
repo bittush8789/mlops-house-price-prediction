@@ -146,6 +146,21 @@ FastAPI automatically generates interactive documentation for developers:
 - **Swagger UI**: [http://127.0.0.1:5000/docs](http://127.0.0.1:5000/docs)
 - **ReDoc**: [http://127.0.0.1:5000/redoc](http://127.0.0.1:5000/redoc)
 
+## 🧪 Automated Testing (Pytest)
+
+The project includes a comprehensive test suite covering data, features, model, and API.
+
+### Run all tests
+```bash
+pytest
+```
+
+### Coverage
+- **Data Validation**: Schema and type checks for `data/raw.csv`.
+- **Feature Engineering**: Unit tests for age, luxury, and zone logic.
+- **Model Integrity**: Validation of model loading and inference consistency.
+- **API Endpoints**: Integration tests for FastAPI endpoints and JSON response structure.
+
 ## 🐳 Dockerization (MLOps Deployment)
 
 EstateAI is fully containerized for consistent deployment across environments.
